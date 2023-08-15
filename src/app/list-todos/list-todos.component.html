@@ -1,0 +1,23 @@
+
+<table border="1">
+    <caption>My Todos</caption>
+    <thead>
+        <tr>
+            <th>description</th>
+            <th>Target Date</th>
+            <th>Is Completed?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- in Java we can write a loop like this: 
+            for (<Todo class> <variable_name> : <list_of_todos>)-->
+
+        <tr *ngFor = "let todo of todos">
+            <td>{{todo.description}}</td>
+            <td>{{todo.targetDate | date}}</td>
+            <td>{{todo.done}}</td>
+        </tr>
+    </tbody>
+
+
+</table>
